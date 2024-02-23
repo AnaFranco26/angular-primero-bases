@@ -1,0 +1,28 @@
+<p>hero works!</p>
+<h1>Spidermans</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{ name }}</dd>
+
+  <td>edad:</td>
+  <dd>{{ edad }}</dd>
+
+  <td>ciudad:</td>
+  <dd>{{ nombreCudad }}</dd>
+
+  <td>Metodo:</td>
+  <dd>{{ obtenerMetodo() }}</dd>
+</dl>
+
+<button
+  class="btn btn-primary mx-2"
+  *ngIf="name !== 'fernanda'"
+  (click)="changeName()"
+>
+  Cambiar nombre
+</button>
+
+<button class="btn btn-primary" *ngIf="edad !==10" (click)="changeEdad()">Cambiar edad</button>
+
+<button class="btn btn-primary mx-2"  (click)="reset()">restaurar valores</button>

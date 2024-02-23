@@ -1,0 +1,14 @@
+<h1>Main BDZ Pages 😎</h1>
+<hr>
+<div class="row">
+  <div class="col">
+
+    <app-dbz-lista [listcharacters]="carters" (onborrarId)="ondeleteCharacter($event)"></app-dbz-lista>
+  </div>
+</div>
+
+
+<div class="col">
+   <app-character (onNewEmiter)="ondCharacter($event)"></app-character>
+</div>
+
